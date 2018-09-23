@@ -4,27 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>Home Work 6</title>
+
 </head>
 
 <body>
 
 
-  <button data-item="">item 0</button>
+  <div class="container">
+    <div id="newAnimals">
+
+Buttons go Here
+
+    </div>
+  </div>
+
+  <button id="button1" data-item="">item 0</button>
 
 
-  <button data-item=""> thing 1</button>
+  <button data-item="cheetah">cheetah</button>
   
 
-  <button data-item="">thing 2</button>
+  <button data-item="deer">Deer</button>
 
-  <button data-item="">thing 3</button>
+  <button data-item="horse">horse</button>
 
-  <button data-item=""> thing 4</button>
+  <button data-item="squirl"> squirl</button>
+
+  <div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Type search here</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <script>
+    
+      $(this).splice(animals)
+
+
+    </script>
+  </div>
 
   <div id="gifs-appear-here"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
+
+
+
+
+
+var animals = ["cheetah", "deer", "horse", "squirl"];
+// var newAnimals  = animals++;
+
+for (a = 0; a < 10; a++) {
+    
+};
+console.log(animals);
+
+// $(#"newAnimals").append("<button>");
+
+
+
+
+$(document).ready(function(){
+ $("#buttonOne").click(function() {
+ $('#newAnimals').append('<button data-role="button" data-inline="true" data-mini="true" data-theme="b">animal button</button>');
+ }); 
+ });
+
+
     // Event listener for all button elements
     $("button").on("click", function() {
       // In this case, the "this" keyword refers to the button that was clicked
@@ -76,6 +123,9 @@
         });
     });
   </script>
+
+<script src="gify.js"></script>
+
 </body>
 <!--   -->
 </html>
